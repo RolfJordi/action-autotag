@@ -4,7 +4,6 @@ const Setup  = require('./lib/setup.js')
 const Package  = require('./lib/package.js')
 const Tag  = require('./lib/tag.js')
 const Regex  = require('./lib/regex.js')
-const Dockerfile  = require('./lib/docker.js')
 
 async function run () {
   try {
