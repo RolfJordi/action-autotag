@@ -6,4 +6,3 @@ logs
 !.github
 !.dockerignore
 _*
-node_modules
