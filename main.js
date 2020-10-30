@@ -1,15 +1,11 @@
 const core = require('@actions/core')
 const os  = require( 'os')
-const Setup  = require('./lib/setup.js')
 const Package  = require('./lib/package.js')
 const Tag  = require('./lib/tag.js')
 const Regex  = require('./lib/regex.js')
 
 async function run () {
   try {
-    Setup.debug()
-    Setup.requireAnyEnv('GITHUB_TOKEN', 'INPUT_GITHUB_TOKEN')
-
     // Configure the default output
     core.setOutput('tagcreated', 'no')
 
