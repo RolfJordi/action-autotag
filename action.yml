@@ -56,4 +56,6 @@ outputs:
     
 runs:
   using: node13
-  main: lib/index.js
+  main: /app/main.js
+  
+  
