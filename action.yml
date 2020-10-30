@@ -53,6 +53,7 @@ outputs:
     description: \"yes\" or \"no\", indicating the tag represents a semantic version pre-release.
   build:
     description: \"yes\" or \"no\", indicating the tag represents a semantic version build.
+    
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: node12
+  main: lib/index.js
