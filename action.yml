@@ -55,5 +55,5 @@ outputs:
     description: \"yes\" or \"no\", indicating the tag represents a semantic version build.
     
 runs:
-  using: node12
+  using: node13
   main: lib/index.js
