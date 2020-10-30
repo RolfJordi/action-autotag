@@ -25,10 +25,6 @@ async function run () {
     const pattern = core.getInput('regex_pattern', { required: false })
 
     switch (strategy) {
-      case 'docker':
-        version = (new Dockerfile(root)).version
-        break
-
       case 'package':
         // Extract using the package strategy (this is the default strategy)
         version = (new Package(root)).version
